@@ -38,3 +38,39 @@ anchor.addEventListener('click', function(e) {
 });
 });
 
+  // JavaScript for gallery functionality
+  const images = [
+    "resources/KPIs.jpg",
+    "resources/KPIs 2.jpg",
+    "resources/Weather-Tracker.png",
+    ]; 
+
+  const image_captions = [
+    "An extract of a KPI dashboard I created.",
+    "Another extract of a KPI dashboard I created.",
+    "Daily weather tracker displaying the forecast from the MET Office each day"
+    ];
+
+  let currentIndex = 0;
+  const imageElement = document.querySelector('.gallery-image');
+  const imageCaption = document.querySelector('.image-caption');
+  const prevBtn = document.getElementById('prevBtn');
+  const nextBtn = document.getElementById('nextBtn');
+
+  function showImage(index) {
+    imageElement.src = images[index];
+    imageCaption.textContent = image_captions[index];
+  }
+
+  prevBtn.addEventListener('click', () => {
+    currentIndex = (currentIndex - 1 + images.length) % images.length;
+    showImage(currentIndex);
+  });
+
+  nextBtn.addEventListener('click', () => {
+    currentIndex = (currentIndex + 1) % images.length;
+    showImage(currentIndex);
+  });
+
+  // Display initial image
+  showImage(currentIndex);

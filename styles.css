@@ -16,10 +16,14 @@ body {
   font-family: Montserrat, serif;
 }
 
+a {
+  color: white;
+}
+
 nav {
   background-color: var(--primary);
   height: 60px;
-  width: 100%;
+  width: 100vw;
   display: flex;
   justify-content: center;
   position: fixed;
@@ -106,16 +110,30 @@ h1 {
 
 /*Me*/
 
-
-.kantar-link {
+.summary-link {
   color: var(--secondary);
 }
 
-.timeline-list,
-ul {
-  list-style-type: none;
-  color: var(--secondary)
+.closing-summary {
+  margin-top: 30px;
 }
+
+.timeline-list {
+  list-style-type: none;
+  color: var(--secondary);
+  padding-left: 10px;
+}
+
+#projects li {
+  margin-bottom: 10px;
+  color: var(--secondary);
+}
+
+#projects a {
+  color: var(--header);
+  font-weight: bold;
+}
+
 
 .list-item {
   display: flex;
@@ -155,6 +173,11 @@ ul {
   margin: 2px;
 }
 
+.legal {
+  font-size: 0.6rem;
+  margin-top: -2px
+}
+
 .hidden {
   display: none;
 }
@@ -170,26 +193,30 @@ button {
   width: 100%;
 }
 
-
 .photo-grid {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  max-width: 100%;
-  overflow: hidden;
-  border: 2px solid white
-}
-
-.photo-group {
+  text-align: center;
   display: flex;
   justify-content: center;
-  gap: 10px;
-  border: 2px solid white
+  flex-direction: column;
+  align-items: center;
 }
-
-.photo-group img {
-  max-width: 100%;
+.gallery-container {
+  display: flex;
+  justify-content: center;
+  width: 80%;
+}
+.gallery-image {
+  width: 100%;
   height: auto;
+  padding: 4px;
+  aspect-ratio: 16/9;
+}
+.arrow-button {
+  font-size: 42px;
+  cursor: pointer;
+  padding: 0px;
+  color: var(--primary);
+  flex-shrink: 2;
 }
 
 .icon {
@@ -261,5 +288,5 @@ button {
   height: 150px;
   width: 150px;
   border-radius: 50%;
-  margin: 64px 0px 28px 0px;
+  margin: 42px 0px 28px 0px;
 }
