@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" />
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width initial-scale=1.0">
+    <title>My Portfolio</title>
+</head>
+
+<body>
+    <header id="header">
+        <nav id="navbar">
+            <ul>
+                <li><a class="nav-link" href="#me">Me</a></li>
+                <li><a class="nav-link" href="#projects">Projects</a></li>
+                <li><a class="nav-link" href="#cv">CV</a></li>
+                <li><a class="nav-link" href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="welcome-section" class="open">
+            <h1>Toby Challis</h1>
+            <p class="current-job-title">Senior Data Quality Executive</p>
+        </section>
+
+        <section id="me" class="me">
+            <h2>A summary...</h2>
+            <div class="summary">
+                <p>Senior Data Quality Executive at <a class="kantar-link" href="https://www.kantar.com/">Kantar</a> in
+                    the FMCG industry at a world leading data analytics and market research company.</p>
+                <p>Recognised by my key stakeholders for my proactiveness, adaptability and problem solving skills
+                    including using automation to reduce processing time from 3 days to half a day, doubling monthly
+                    participation rates in consumer panle repsonses and significantly improving the confidence levels in
+                    the quality of pricing data from one of the UK's largest retailers.</p>
+            </div>
+            <div class="timeline">
+                <ul class="timeline-list">
+                    <li class="list-item">
+                        <h4 class="list-subtitle">Kantar <span class="date">2022 - Present</span></h4>
+                        <p><span class="job-title">Senior Data Quality Executive</span> - Responsible for the data
+                            quality of two market research panels covering the Out of Home food market in the UK and the
+                            FMCG industry in Ireland.</p>
+                        <p><span class="job-title">Data Quality Executive</span> - Managed the continuous data streams
+                            produced by the 'ShopandScan' app for the Out of Home consumer market research panel.</p>
+                        <p><span class="job-title">Data Quality Analyst</span> - Supported quality management on the Out
+                            of Home panel, carrying out BAU tasks, data investigations and KPI management.</p>
+                    </li>
+                    <li class="list-item">
+                        <h4 class="list-subtitle"> Univserity of Sussex<span class="date">2017 - 2021</span></h4>
+                        <p><span class="job-title">Mathematics 2.1</span> - Key modules Statistics...</p>
+                        <p><span class="job-title">Transcriber</span> - Transcribed lectures for student during Covid to
+                            improve accessibility.</p>
+                    </li>
+                    <li class="list-item">
+                        <h4 class="list-subtitle"> Freedom Leisure<span class="date">2018 - 2019</span></h4>
+                        <p><span class="job-title">Lifeguard</span> - Supervised two large leisure center swimming pools
+                            with other Lifeguards, carrying out first aid and ensuring safety.</p>
+                        <p><span class="job-title">Party Leader</span> - Planned, managed and entertained parties of up
+                            to 30 children.</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="divider"></div>
+        </section>
+
+        <section id="projects">
+            <h2>Portfolio</h2>
+            <p class="sub-header">Click through to see some of my work...</p>
+
+            <div class="reveal-container">
+                <button id="reveal-powerbi" class="reveal-button list-subtitle bold"
+                    data-target="revealed-content-powerbi">Power BI</button>
+                <div class="divider small"></div>
+                <div id="revealed-content-powerbi" class="revealed-content hidden">
+                    <p>During my work I have created several dashboards, here are some of them.</p>
+                    <div class="photo-grid">
+                        <div class="photo-group">
+                            <img src="https://media.istockphoto.com/id/1529671718/vector/graphs-and-charts.jpg?s=612x612&w=0&k=20&c=NFy9jKrwW35b7pP43fU5ek4pl5nkVeR4E4Y2DhwGg0U="
+                                alt="screenshot of KPI dashboard1">
+                            <img src="https://media.istockphoto.com/id/1296381479/vector/set-of-simple-infographic-graphs-and-charts-data-visualization-statistics-and-business.jpg?s=612x612&w=0&k=20&c=JpEoP-6w16OwVC49Sq2PEI8-dHF1CZnm7rHyL5DoxqA="
+                                alt="screenshot of KPI dashboard2">
+                        </div>
+                        <div class="photo-group">
+                            <img src="example.jp" alt="screenshot of daily tracker1">
+                            <img src="example.jp" alt="screenshot of daily tracker2">
+                            <img src="example.jp" alt="screenshot of daily tracker3">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="reveal-container">
+                <button id="reveal-button-python" class="reveal-button list-subtitle bold"
+                    data-target="revealed-content-python">Python</button>
+                <div class="divider small"></div>
+                <div id="revealed-content-python" class="revealed-content hidden">
+                    <p>I have used Python extensivley throughout my career and degree. Making use of its tool set to
+                        analyse data and automate processes</p>
+                    <ul>
+                        <li><a href="">Automate</a></li>
+                        <li>Process</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="reveal-container">
+                <button id="reveal-button-sql" class="reveal-button list-subtitle bold"
+                    data-target="revealed-content-sql">SQL</button>
+                <div class="divider small"></div>
+                <div id="revealed-content-sql" class="revealed-content hidden">
+                    <p>This is some additional content.</p>
+                    <img src="example.jpg" alt="Example Image">
+                </div>
+            </div>
+
+
+            <div class="reveal-container">
+                <button id="reveal-button-excel" class="reveal-button list-subtitle bold"
+                    data-target="revealed-content-excel">Excel</button>
+                <div class="divider small"></div>
+                <div id="revealed-content-excel" class="revealed-content hidden">
+                    <p>This is some additional content.</p>
+                    <img src="example.jpg" alt="Example Image">
+                </div>
+            </div>
+
+            <div class="reveal-container">
+                <button id="reveal-button-html" class="reveal-button list-subtitle bold"
+                    data-target="revealed-content-html">HTML</button>
+                <div class="divider small"></div>
+                <div id="revealed-content-html" class="revealed-content hidden">
+                    <ul>
+                        <li>This Website</li>
+                        <li><a href="OOH recruitment email.html" target="_blank">An email recruiting members to our panel 'Food on the Go' - The sign up boxes are dynamically hidden or revealed depending on the number of individuals we are inviting</a></li>
+                        <li>This ...</li>
+                        <li>This ...</li>
+                    </ul>
+
+                </div>
+            </div>
+
+            <div class="reveal-container">
+                <button id="reveal-button-c#" class="reveal-button list-subtitle bold"
+                    data-target="revealed-content-c#">C#</button>
+                <div class="divider small"></div>
+                <div id="revealed-content-c#" class="revealed-content hidden">
+                    <p>This is some additional content.</p>
+                    <img src="example.jpg" alt="Example Image">
+                </div>
+            </div>
+            <div class="icon"><i class="fas fa-code"></i></div>
+            <div class="divider"></div>
+        </section>
+
+        <section id="cv" class="cv">
+            <h2>CV</h2>
+            <p class="sub-header">Want to know more?</p>
+            <div class="img-container">
+                <img class="cv-one"
+                    src="CV1.png"
+                    alt="Toby Challis CV Page 1">
+                <img class="cv-two"
+                    src="CV2.png"
+                    alt="Toby Chaills CV Page 2">
+            </div>
+            <a id="cv-link" href="Toby Challis 2024.pdf" target="_blank">View and Dowload here</a>
+            <div class="divider"></div>
+        </section>
+
+        <section id="contact" class="contact">
+            <div class="top">
+                <h2 class="contact-header">Contact</h2>
+               
+                <p class="sub-header">If you would like to work with me please use one of the below to get in touch</p>
+               
+                <img src="Me.jpg" alt="headshot of me (Toby Challis)">
+            </div>
+            <div class="contact-links">
+                <a class="contact-icons" href="07706947161">
+                    <i class="fas fa-phone"></i> Phone</a>
+                <a class="contact-icons" href="mailto:toby.c.challis@gmail.com" target="_blank">
+                    <i class="far fa-envelope"></i>Email</a>
+                <a class="contact-icons" href="www.linkedin.com/in/toby-challis" target="_blank">
+                    <i class="fab fa-linkedin-in"></i> LinkedIn </a>
+                <a class="contact-icons" href="" target="_blank">
+                    <i class="fab fa-github"></i> GitHub</a>
+            </div>
+        </section>
+        <div class="divider-final"></div>
+    </main>
+
+    <script src="script.js">
+    </script>
+
+</body>
+
+</html>
