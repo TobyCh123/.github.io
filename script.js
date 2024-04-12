@@ -40,9 +40,9 @@ anchor.addEventListener('click', function(e) {
 
   // JavaScript for gallery functionality
   const images = [
-    "resources/KPIs.jpg",
-    "resources/KPIs 2.jpg",
-    "resources/Weather-Tracker.png",
+    "resources/PowerBi/KPIs.jpg",
+    "resources/PowerBi/KPIs 2.jpg",
+    "resources/PowerBi/Weather-Tracker.png",
     ]; 
 
   const image_captions = [
