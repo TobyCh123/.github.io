@@ -3,9 +3,14 @@ const textInputBox = document.getElementById("text-input");
 const resultBox = document.getElementById("result");
 
 checkButton.addEventListener("click", () => {
-  const inputText = textInputBox.value;
-  main(inputText)
-  });
+  main()
+});
+
+textInputBox.addEventListener("keydown", (e) => {
+  if (e.key === "Enter") {
+    main();
+  }
+});
 
 
 /* Function to check if blank */
@@ -28,7 +33,7 @@ const textFormatter = (text) => {
 /* Process text */
 const textProcessor = (text) => {
   let stringArray = []
-  
+
   for (let index in text) {
     stringArray.push(text[index]);
   }
@@ -44,23 +49,22 @@ const isPalindrome = (text, reverseString) => {
 }
 
 
-const main = (text) => {
-  console.log(text)
-  console.log(textProcessor(textFormatter(text)))
+const main = () => {
+  const text = textInputBox.value;
 
   if (textChecker(text)) {
     const formattedText = textFormatter(text)
     const reverseText = textProcessor(formattedText);
-    
+
     let resultString = text
-    
+
     if (isPalindrome(formattedText, reverseText)) {
-       resultString += ' is a palindrome'
+      resultString += ' is a palindrome'
     }
     else {
-        resultString += ' is not a palindrome'
+      resultString += ' is not a palindrome'
     }
     resultBox.textContent = resultString;
     resultBox.hidden = false;
-    }
   }
+}

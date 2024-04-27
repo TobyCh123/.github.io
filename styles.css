@@ -16,9 +16,6 @@ body {
   font-family: Montserrat, serif;
 }
 
-a {
-  color: white;
-}
 
 nav {
   background-color: var(--primary);
@@ -37,7 +34,7 @@ nav ul {
   /* Remove default bullet points */
   margin: 0;
   padding: 10px;
-  width: 80%;
+  width: 90%;
   display: flex;
   /* Use flexbox for horizontal layout */
   justify-content: center;
@@ -50,6 +47,7 @@ nav li {
   /* Adjust padding for spacing between links */
   flex-grow: 1;
 }
+
 
 .nav-link {
   color: var(--font-color);
@@ -132,7 +130,13 @@ h1 {
   color: var(--secondary);
 }
 
-#projects a {
+#projects a,
+#cv a {
+  color: var(--header);
+  font-weight: bold;
+}
+
+.highlight {
   color: var(--header);
   font-weight: bold;
 }
@@ -171,31 +175,46 @@ h1 {
 }
 
 /*Skills*/
-.small {
-  border: 1px solid var(--secondary);
-  margin: 2px;
+.hidden {
+  display: none;
+}
+
+
+button {
+  border: none;
+  background: none;
+  padding: 2px;
+  margin: 4px;
+  cursor: pointer;
+  letter-spacing: 2px;
+  font-size: 1rem;
+  width: 100%;
+  font-size: 1.2rem;
+}
+
+/* Animation for skill buttons */
+.reveal-button {
+  border-bottom: 2px solid var(--secondary);
+  position: relative; 
+}
+.reveal-button::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 2px; 
+  background-color: yellow; 
+  transition: width ease-in-out 0.25s;
+}
+.reveal-button:hover::after {
+  width: 100%;
 }
 
 .legal {
   font-size: 0.6rem;
   margin-top: -2px
 }
-
-.hidden {
-  display: none;
-}
-
-button {
-  border: none;
-  background: none;
-  padding: 2px;
-  margin: 2px;
-  cursor: pointer;
-  letter-spacing: 2px;
-  font-size: 1rem;
-  width: 100%;
-}
-
 .photo-grid {
   text-align: center;
   display: flex;
@@ -208,12 +227,18 @@ button {
   justify-content: center;
   width: 80%;
 }
-.gallery-image {
+figure {
   width: 100%;
-  height: auto;
+  font-size: 0.9rem;
+}
+
+.gallery-image {
+  width: 100%; /* Set the maximum width to 100% of the container */
+  height: auto; /* Let the height adjust proportionally */
   padding: 4px;
   aspect-ratio: 16/9;
 }
+
 .arrow-button {
   font-size: 42px;
   cursor: pointer;
@@ -225,7 +250,7 @@ button {
 .icon {
   text-align: center;
   font-size: 26px;
-  margin: 24px 0 16px 0 ;
+  margin: 24px 0 16px 0;
 }
 
 /*CV*/
@@ -242,13 +267,12 @@ button {
 .cv-one,
 .cv-two {
   display: cover;
-  /*Crops rather than moves don't think needed with below set up*/
   max-width: 40%;
   /*Only fills half section each */
   height: auto;
   /*Maintain aspect ratio */
   margin: 24px 6px;
-  
+
 }
 
 
@@ -281,6 +305,8 @@ button {
   text-decoration: none;
   color: var(--font-color);
   margin: 8px;
+  padding: 3px 0px;
+  border-radius: 40%;
 }
 
 .contact-icons:hover {

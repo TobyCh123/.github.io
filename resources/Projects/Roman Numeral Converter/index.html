@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<meta content="width=device-width, intial-scale = 1.0">
+<title>Roman Numeral Converter</title>
+<link rel="stylesheet" href="styles.css">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap" rel="stylesheet">
+
+<body>
+  <header>
+    Roman Numeral Converter
+  </header>
+  <div class="cloud one">
+    <div class="cloud-circle-one"></div>
+    <div class="cloud-circle-two"></div>
+    <div class="cloud-circle-three"></div>
+  </div>
+  <div class="cloud two">
+    <div class="cloud-circle-one"></div>
+    <div class="cloud-circle-two"></div>
+    <div class="cloud-circle-three"></div>
+  </div>
+
+  <div id="sun"></div>
+  <div class="back-mountain"></div>
+  <div class="front-mountain"></div>
+  <div id="content-structure">
+    <div id="roof"> <label for="number">Enter a number...</label></div>
+    <div id="top-beam">
+      <form onsubmit="updateUI(); return false;">
+        <input id="number" type="number"></input>
+        <button id="convert-btn" type="button">Convert</button>
+      </form>
+    </div>
+    <div id="main-building">
+      <div id="column-1" class="column">
+        <div class="column-inside"></div>
+        <div class="column-inside"></div>
+        <div class="column-inside"></div>
+        <div class="column-inside"></div>
+      </div>
+      <section id="content">
+        <div class="light-beam">
+          <div id="output">
+          </div>
+        </div>
+      </section>
+      <div id="column-2" class="column">
+        <div class="column-inside"></div>
+        <div class="column-inside"></div>
+        <div class="column-inside"></div>
+        <div class="column-inside"></div>
+      </div>
+    </div>
+  </div>
+  <div id="ground"></div>
+  <script src="script.js"></script>
+</body>
+
+</html>
