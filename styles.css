@@ -126,7 +126,7 @@ h1 {
 }
 
 #projects li {
-  margin-bottom: 10px;
+  margin-bottom: 15px;
   color: var(--secondary);
 }
 
@@ -305,8 +305,8 @@ figure {
   text-decoration: none;
   color: var(--font-color);
   margin: 8px;
-  padding: 3px 0px;
-  border-radius: 40%;
+  padding: 3px 2px;
+  border-radius: 5%;
 }
 
 .contact-icons:hover {
