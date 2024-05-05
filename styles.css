@@ -264,14 +264,20 @@ figure {
   /* Horizontally center images*/
 }
 
+#cv object {
+  width: 70%;
+  height: 900px;
+  border: auto;
+}
+
 .cv-one,
 .cv-two {
   display: cover;
-  max-width: 40%;
+  max-width: 48%;
   /*Only fills half section each */
   height: auto;
   /*Maintain aspect ratio */
-  margin: 24px 6px;
+  margin: 12px 6px;
 
 }
 
@@ -305,7 +311,7 @@ figure {
   text-decoration: none;
   color: var(--font-color);
   margin: 8px;
-  padding: 3px 2px;
+  padding: 3px 0px;
   border-radius: 5%;
 }
 
