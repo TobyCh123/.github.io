@@ -1,6 +1,5 @@
 document.addEventListener('DOMContentLoaded', function () {
   var revealButtons = document.querySelectorAll('.reveal-button');
-  var revealedContents = document.querySelectorAll('.revealed-content');
 
   revealButtons.forEach(function (button) {
     button.addEventListener('click', function () {
@@ -50,7 +49,7 @@ const image_captions = [
   "An extract of a KPI dashboard I created.",
   "Another extract of a KPI dashboard I created.",
   "Daily weather tracker displaying the forecast from the MET Office each day - used to compare with internal data trends",
-  "Daily tracker to track panel metrics - This is an hour breakdown for a specific day. I also made daily and 7 day rolling on other tabs"
+  "Daily tracker to track panel metrics - This is an hour breakdown for a specific day. Daily and 7 day rolling tabs also exist (not featured)"
 ]
 
 let currentIndex = 0;

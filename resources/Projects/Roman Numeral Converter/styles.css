@@ -8,7 +8,7 @@ body{
   background: linear-gradient(180deg, rgb(88, 175, 236), rgb(182, 255, 255));
   margin: 0;
   padding: 0;
-  width: 100%;
+  width: 100vw;
   height: 100vh;
   overflow: hidden;
   text-align: center;
@@ -17,13 +17,13 @@ body{
 }
 
 #sun {
-  position: relative;
+  position: absolute;
   height: 75px;
   width: 75px;
   background: radial-gradient(circle at center, yellow, white 90%);
   border-radius: 50%;
   top: -3%;
-  right: -90%;
+  left: -2%;
   z-index: -1;
 }
 
@@ -83,11 +83,6 @@ header {
   justify-content: center;
 }
 
-#top-beam form {
-  display: flex;
-  align-items:center;
-  margin: 0 5px 0px 40px;
-}
 
 #top-beam input {
   margin: 0 10px;
@@ -144,9 +139,11 @@ header {
     height: 100%;
 }
 
-form {
-  margin-top: 10px;
-  margin-left: 20%;
+
+#top-beam form {
+  display: flex;
+  align-items:center;
+  margin: 0 5px 0px 5px;
 }
 
 form input {
@@ -163,7 +160,7 @@ form button {
 
 #output {
   height: 100%;
-  margin: 0px 20px;
+  margin: 0px 10px;
   color: white;
   display: flex;
   align-items: center;
@@ -259,4 +256,18 @@ form button {
   width: 100%;
   height: 30%;
   background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0)); /* Transparent to semi-transparent white gradient for snowy peaks */
+}
+
+@media screen and (max-width: 560px) {
+  header {
+    font-size: 1.8rem;
+    bottom: 6%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  header {
+    font-size: 1.5rem;
+    bottom: 5%;
+  }
 }
