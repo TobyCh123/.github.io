@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pokemon Database</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    Pokemon Database
+  </header>
+  <main>
+    <div id="container">
+      <form class="form" onsubmit="search(); return false;"">
+          <label for='search-input'>Enter Pokemon: 
+          <input id="search-input" placeholder="e.g. Squirtle..." type="text" required></input>
+        </label>
+        <div id="suggestion" class="suggestion"></div>
+      </form>
+      <div id="display">
+        <div id="id-info">
+          <div id="pokemon-name">Pokemon</div>
+          <div id="pokemon-id">#id</div>
+        </div>
+        <div id="physical-info">
+          <div id="weight">Weight: </div>
+          <div id="height">Height: </div>
+        </div>
+        <div id="img-container">
+          <img id='sprite'>
+        </div>
+        <div id='types'></div>
+        <div id='stats'>
+          <div id='column'>
+            <div class="row" id="hp-box">
+              <span class="row-desc">HP:</span>
+              <span class="row-value" id="hp">-</span>
+            </div>
+            <div class="row" id="attack-box">
+              <span class="row-desc">Attack:</span>
+              <span class="row-value" id="attack">-</span>
+            </div>
+            <div class="row" id="defense-box">
+              <span class="row-desc">Defense:</span>
+              <span class="row-value" id="defense">-</span>
+            </div>
+            <div class="row" id="special-attack-box">
+              <span class="row-desc">SP.Attack:</span>
+              <span class="row-value" id="special-attack">-</span>
+            </div>
+            <div class="row" id="special-defense-box">
+              <span class="row-desc">SP.Defense:</span>
+              <span class="row-value" id="special-defense">-</span>
+            </div>
+            <div class="row" id="speed-box">
+              <span class="row-desc">Speed:</span>
+              <span class="row-value" id="speed">-</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src='script.js'></script>
+  </main>
+</body>
+
+</html>
