@@ -15,6 +15,7 @@ const speed = document.getElementById('speed')
 const typeBox = document.getElementById('types')
 const pokemonUrl = 'https://pokeapi-proxy.freecodecamp.rocks/api/pokemon';
 const suggestionBox = document.getElementById('suggestion')
+const imageBox = document.getElementById('img-container')
 
 const fetchData = async (url) => {
   try {
@@ -31,6 +32,10 @@ const capitalizeFirstLetter = (word) => word.charAt(0).toUpperCase() + word.slic
 const assignValues = (pokemonJson) => {
   console.log('assigning')
   pokemonName.textContent = capitalizeFirstLetter(pokemonJson.name);
+  if (pokemonJson.name.length >= 18) {
+
+    imageBox.style.height = '35%'
+  }
   pokemonId.textContent = `#${pokemonJson.id}`;
   weight.textContent = `Weight: ${pokemonJson.weight}`;
   height.textContent = `Height: ${pokemonJson.height}`;
@@ -90,6 +95,9 @@ const getColor = (typeName) => {
 
 const search = async () => {
   typeBox.innerHTML = '';
+  pokemonName.style.fontSize = '1.5rem'
+  imageBox.style.height = '40%'
+
   const pokemon = searchInput.value.toLowerCase();
   const searchUrl = `${pokemonUrl}/${pokemon}`;
   const pokemonJson = await fetchData(searchUrl);

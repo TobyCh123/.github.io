@@ -15,13 +15,14 @@
     Pokemon Database
   </header>
   <main>
+    <form class="form" onsubmit="search(); return false;"">
+      <label for='search-input'>Enter Pokemon: 
+      <input id="search-input" placeholder="e.g. Squirtle..." type="text" required></input>
+    </label>
+    <div id="suggestion" class="suggestion"></div>
+  </form>
     <div id="container">
-      <form class="form" onsubmit="search(); return false;"">
-          <label for='search-input'>Enter Pokemon: 
-          <input id="search-input" placeholder="e.g. Squirtle..." type="text" required></input>
-        </label>
-        <div id="suggestion" class="suggestion"></div>
-      </form>
+     
       <div id="display">
         <div id="id-info">
           <div id="pokemon-name">Pokemon</div>
@@ -34,7 +35,7 @@
         <div id="img-container">
           <img id='sprite'>
         </div>
-        <div id='types'></div>
+        <div id='types'><div class="types-box">Type</div></div>
         <div id='stats'>
           <div id='column'>
             <div class="row" id="hp-box">
