@@ -58,7 +58,7 @@ const assignType = (pokemonJson) => {
       </div>`
   })
 
-  let gradientColor ='#b7b7aa'; // default value
+  let gradientColor = '#b7b7aa' ;
   if (typeArray.length === 1) {
     gradientColor = `linear-gradient(135deg, ${getColor(typeArray[0].type.name)}, #b7b7aa)`;
   } else {
@@ -91,6 +91,7 @@ const getColor = (typeName) => {
   }
   return colors[typeName] || colors.default
 }
+
 
 
 const search = async () => {
